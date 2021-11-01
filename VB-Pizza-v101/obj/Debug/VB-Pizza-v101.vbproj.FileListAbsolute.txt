@@ -1,0 +1,12 @@
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\bin\Debug\Pizza101.exe.config
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\bin\Debug\Pizza101.exe
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\bin\Debug\Pizza101.pdb
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\bin\Debug\Pizza101.xml
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\obj\Debug\VB-Pizza-v101.vbprojAssemblyReference.cache
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\obj\Debug\Pizza101.Pizza101.resources
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\obj\Debug\Pizza101.Resources.resources
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\obj\Debug\VB-Pizza-v101.vbproj.GenerateResource.cache
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\obj\Debug\VB-Pizza-v101.vbproj.CoreCompileInputs.cache
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\obj\Debug\Pizza101.exe
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\obj\Debug\Pizza101.xml
+C:\Users\FinnH\OneDrive - NSW Department of Education\School\SDD\2022\Pizza thing\arrRecords-master\VB-Pizza-v101\obj\Debug\Pizza101.pdb

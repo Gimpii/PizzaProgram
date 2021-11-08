@@ -87,6 +87,11 @@
             Exit Sub
         End If
 
+        If txtQuantity.Text = "" Then
+            txtQuantity.Text = 0
+            Exit Sub
+        End If
+
         students(studentCount).studID = studentCount + 1 'allocate the new student ID to an incremented value
         'place text from text boxes into the array - first students(0), then students(1), students(2) etc
         students(studentCount).firstName = txtFirstName.Text
@@ -154,7 +159,20 @@
     End Sub
 
     Private Sub CalcTotalPrice()
-        txtTotalPrice.Text = FormatCurrency(topPrice * Int(txtQuantity.Text))
+
+        If txtQuantity.Text = "" Then
+            txtQuantity.Text = 0
+        End If
+
+        Dim int As Integer
+
+        If Not Integer.TryParse(txtQuantity.Text, int) Then
+            MsgBox("Enter a whole number", MsgBoxStyle.Exclamation)
+            txtQuantity.Focus()
+            txtQuantity.Text = 0
+        Else
+            txtTotalPrice.Text = FormatCurrency(topPrice * int)
+        End If
     End Sub
 
     Private Sub txtQuantity_TextChanged(sender As Object, e As EventArgs) Handles txtQuantity.TextChanged

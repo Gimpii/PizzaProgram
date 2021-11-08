@@ -35,6 +35,7 @@
         Next
         'load default prices
         basePrice = 10.0
+        txtQuantity.Text = 0
         top1Price = 0.3
         top2Price = 0.45
         top3Price = 0.9
@@ -99,7 +100,7 @@
         txtLastName.Text = ""
         dteDelivery.Text = ""
         txtPostcode.Text = ""
-        txtQuantity.Text = ""
+        txtQuantity.Text = 0
         displayList()
     End Sub
     Private Sub displayList()
@@ -153,7 +154,7 @@
     End Sub
 
     Private Sub CalcTotalPrice()
-        txtTotalPrice.Text = FormatCurrency(topPrice * students(studentCount).quantity)
+        txtTotalPrice.Text = FormatCurrency(topPrice * Int(txtQuantity.Text))
     End Sub
 
     Private Sub txtQuantity_TextChanged(sender As Object, e As EventArgs) Handles txtQuantity.TextChanged

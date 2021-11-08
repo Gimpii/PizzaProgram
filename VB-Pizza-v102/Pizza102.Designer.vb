@@ -144,6 +144,7 @@ Partial Class Pizza102
         Me.txtQuantity.Location = New System.Drawing.Point(537, 128)
         Me.txtQuantity.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtQuantity.Name = "txtQuantity"
+        Me.txtQuantity.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
         Me.txtQuantity.Size = New System.Drawing.Size(148, 26)
         Me.txtQuantity.TabIndex = 3
         '

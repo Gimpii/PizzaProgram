@@ -1,4 +1,5 @@
-﻿Public Class Pizza103
+﻿Imports System.Text.RegularExpressions
+Public Class Pizza103
     'set up a record or "class" for a student
     Public isValid As Boolean
     Class STUDENT
@@ -86,8 +87,18 @@
         isValid = True
         validateStrBox(txtFirstName, "First Name")
         validateStrBox(txtLastName, "Last Name")
-        validateStrBox(txtPostcode, "Postcode")
         validateStrBox(txtSuburb, "Suburb")
+
+        If txtPhoneNumber.Text.Contains(" ") Then
+            MsgBox("Please do not use spaces within the phone number box")
+            Return
+        End If
+        Dim postCode = New Regex("^\d{4}$")
+        Dim postCodeMatch = postCode.Match(txtPostcode.Text)
+        If Not postCodeMatch.Success Then
+            MsgBox("Please enter a valid 4 digit Australian PostCode")
+            Return
+        End If 'Block of Code credited to Aiden Gardner @aiden2480 on Github
 
         If isValid = True Then
             students(studentCount).studID = studentCount + 1 'allocate the new student ID to an incremented value

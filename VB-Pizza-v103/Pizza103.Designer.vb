@@ -125,6 +125,7 @@ Partial Class Pizza103
         '
         Me.txtPostcode.Location = New System.Drawing.Point(54, 193)
         Me.txtPostcode.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtPostcode.MaxLength = 4
         Me.txtPostcode.Name = "txtPostcode"
         Me.txtPostcode.Size = New System.Drawing.Size(148, 26)
         Me.txtPostcode.TabIndex = 4

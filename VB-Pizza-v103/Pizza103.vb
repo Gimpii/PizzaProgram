@@ -88,6 +88,7 @@ Public Class Pizza103
         validateStrBox(txtFirstName, "First Name")
         validateStrBox(txtLastName, "Last Name")
         validateStrBox(txtSuburb, "Suburb")
+        validateStrBox(txtAddress, "Address")
 
         If txtPhoneNumber.Text.Contains(" ") Then
             MsgBox("Please do not use spaces within the phone number box")
@@ -175,12 +176,11 @@ Public Class Pizza103
             MsgBox("Please input valid answer for " + name)
             isValid = False
             Exit Sub
-        End If
-
-        If Integer.TryParse(box.Text, int) Then
+        ElseIf Integer.TryParse(box.Text, int) Then
             MsgBox("Please only enter characters for " + name)
             isValid = False
         End If
+
     End Sub
     Private Sub CalcTotalPrice()
 

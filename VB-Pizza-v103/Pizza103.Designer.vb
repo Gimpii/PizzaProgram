@@ -49,7 +49,6 @@ Partial Class Pizza103
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtPhoneNumber = New System.Windows.Forms.MaskedTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtAddress = New System.Windows.Forms.MaskedTextBox()
         Me.Address = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txtTopPrice = New System.Windows.Forms.MaskedTextBox()
@@ -63,6 +62,7 @@ Partial Class Pizza103
         Me.txtTop3 = New System.Windows.Forms.MaskedTextBox()
         Me.txtTop4 = New System.Windows.Forms.MaskedTextBox()
         Me.txtSuburb = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'txtFirstName
@@ -336,13 +336,6 @@ Partial Class Pizza103
         Me.Label4.TabIndex = 31
         Me.Label4.Text = "Phone number"
         '
-        'txtAddress
-        '
-        Me.txtAddress.Location = New System.Drawing.Point(213, 192)
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(148, 26)
-        Me.txtAddress.TabIndex = 5
-        '
         'Address
         '
         Me.Address.AutoSize = True
@@ -451,11 +444,19 @@ Partial Class Pizza103
         Me.txtSuburb.Size = New System.Drawing.Size(148, 26)
         Me.txtSuburb.TabIndex = 6
         '
+        'txtAddress
+        '
+        Me.txtAddress.Location = New System.Drawing.Point(213, 192)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(148, 26)
+        Me.txtAddress.TabIndex = 46
+        '
         'Pizza103
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1046, 820)
+        Me.Controls.Add(Me.txtAddress)
         Me.Controls.Add(Me.txtSuburb)
         Me.Controls.Add(Me.txtTop4)
         Me.Controls.Add(Me.txtTop3)
@@ -469,7 +470,6 @@ Partial Class Pizza103
         Me.Controls.Add(Me.txtTopPrice)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Address)
-        Me.Controls.Add(Me.txtAddress)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtPhoneNumber)
         Me.Controls.Add(Me.Label10)
@@ -534,7 +534,6 @@ Partial Class Pizza103
     Friend WithEvents Label10 As Label
     Friend WithEvents txtPhoneNumber As MaskedTextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtAddress As MaskedTextBox
     Friend WithEvents Address As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents txtTopPrice As MaskedTextBox
@@ -548,4 +547,5 @@ Partial Class Pizza103
     Friend WithEvents txtTop3 As MaskedTextBox
     Friend WithEvents txtTop4 As MaskedTextBox
     Friend WithEvents txtSuburb As TextBox
+    Friend WithEvents txtAddress As TextBox
 End Class

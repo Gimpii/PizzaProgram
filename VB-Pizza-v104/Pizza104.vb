@@ -50,33 +50,8 @@ Public Class Pizza104
         txtTop3.Text = top3Price
         txtTop4.Text = top4Price
 
-        'load 4 test records
-        students(0).customerID = 1
-        students(0).firstName = "Johnny"
-        students(0).lastName = "Depp"
-        students(0).deliveryDate = "9/6/63"
-        students(0).postcode = "m"
-        students(0).quantity = 78.2
-        students(1).customerID = 2
-        students(1).firstName = "Jennifer"
-        students(1).lastName = "Lawrence"
-        students(1).deliveryDate = "15/8/90"
-        students(1).postcode = "f"
-        students(1).quantity = 88.2
-        students(2).customerID = 3
-        students(2).firstName = "George"
-        students(2).lastName = "Clooney"
-        students(2).deliveryDate = "6/5/61"
-        students(2).postcode = "m"
-        students(2).quantity = 68.2
-        students(3).customerID = 4
-        students(3).firstName = "Scarlett"
-        students(3).lastName = "Johansson"
-        students(3).deliveryDate = "22/11/84"
-        students(3).postcode = "f"
-        students(3).quantity = 72.2
         'set the student count to the number of students which have been entered
-        studentCount = 4
+        studentCount = 0
         dteDelivery.MinDate = Date.Today()
         dteDelivery.MaxDate = Date.Today().AddDays(28)
         displayList()

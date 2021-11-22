@@ -77,6 +77,8 @@ Public Class Pizza104
         students(3).quantity = 72.2
         'set the student count to the number of students which have been entered
         studentCount = 4
+        dteDelivery.MinDate = Date.Today()
+        dteDelivery.MaxDate = Date.Today().AddDays(28)
         displayList()
         CalcTotalPrice()
     End Sub
@@ -258,6 +260,9 @@ Public Class Pizza104
     Private Sub newPassword_Click(sender As Object, e As EventArgs) Handles newPassword.Click
         Dim passInput, confirm
         passInput = InputBox("Please Enter a new Password", "Admin")
+        If passInput = "" Then
+            Return
+        End If
         confirm = MessageBox.Show("Confirm New password as: '" + passInput + "'", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If confirm = vbYes Then
             Password = passInput
